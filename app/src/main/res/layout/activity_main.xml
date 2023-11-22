@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textoTraduccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Traducción."
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnHablar"
+        android:layout_width="100dp"
+        android:layout_height="95dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/textoTraduccion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="325dp"
+        android:background="@drawable/circular_button_background"
+        android:onClick="BtnHablar"
+        android:drawableTop="@drawable/speak"
+        android:drawablePadding="10dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter text to translate"
+        android:text="Español a Ingles"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:autoSizeTextType="none" />
+
+
+</RelativeLayout>
